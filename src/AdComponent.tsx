@@ -12,8 +12,8 @@ const AdComponent = () => {
     return (
         <ins className="adsbygoogle"
         style={{ display: 'inline-block', width: '120px', height: '450px' }}
-        data-ad-client="ca-pub-9166240275013964"
-        data-ad-slot="2854881164"
+        data-ad-client="hidden"
+        data-ad-slot="hidden"
         data-ad-test="on"
     ></ins>
     );
