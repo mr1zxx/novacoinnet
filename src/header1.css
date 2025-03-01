@@ -1,0 +1,462 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ececec;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    color: #313131; 
+    text-decoration: none;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 0px;
+    background-color: #f3ecec;
+  }
+  
+  .mainheader {
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+  
+  .novacoinlogo {
+    width: auto;
+    height: 25px;
+    display: flex;
+    margin-top: 8px;
+  }
+  
+  .novacoinlogo::selection {
+    background: transparent;
+    color: inherit;
+  }
+  
+  .novacoinlogo:hover {
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 0px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @font-face {
+    font-family: 'criptofont';
+    src: url(/src/assets/coinfont.ttf);
+  }
+  
+  .mainnav {
+    display: flex;
+    border-bottom: solid gray 1px;
+    border-top: solid gray 1px;
+    width: 100%;
+    height: 60px;
+    background-color: #d2e2e6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .searchbox {
+    border-radius: 7px;
+    background-color: #f7f7f7;
+    margin-top: 7px;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'criptofont';
+    font-weight: 700;
+    border: solid 1px rgb(41, 41, 41);
+    height: auto;
+    width: auto;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'criptofont';
+    font-weight: 600;
+  }
+  
+  li {
+    text-decoration: none;
+    display: flex;
+  }
+  
+  .lihv:hover {
+    text-shadow: 7px 7px 7px rgb(15, 15, 15);
+  }
+  
+  li::selection {
+    background: transparent;
+    color: inherit;
+  }
+  
+  .separador {
+    color: #0f0707;
+  }
+  
+  .bitcoin, .Ethereum {
+    height: 18px;
+    width: 18px;
+    display: flex;
+  }
+  
+  @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .bitcoin::selection {
+    background: transparent;
+    color: inherit;
+  }
+  
+  .Ethereum::selection {
+    background: transparent;
+    color: inherit;
+  }
+  
+  .spinico {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    display: inline-block;
+    animation: spin 4s linear infinite;
+  }
+  
+  .spinico::selection {
+    background: transparent;
+    color: inherit;
+  }
+  
+  .adheader {
+    width: 100%;
+    background-color: #dfdfdf;
+    height: 20px;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .criptographs {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'criptofont';
+    font-weight: 600;
+  }
+  
+  @keyframes moveBars {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+  }
+  
+  .cripto1 {
+    animation: moveBars 5s linear infinite;
+    color: #0f0707;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: row;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .mainheader {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .searchbox {
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .mainnav {
+      flex-direction: row;
+      height: 50px;
+    }
+  
+    .menu {
+      flex-direction: row;
+      gap: 5px;
+    }
+  
+    .criptographs {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .novacoinlogo {
+      height: 15px;
+      width: auto;
+      margin-bottom: 5px;
+    }
+  
+    .searchbox {
+      padding: 5px;
+    }
+  
+    .menu {
+      font-size: 12px;
+    }
+  
+    .criptographs {
+      font-size: 7px;
+    }
+  }
+  .subnav {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: #ebeaea;
+    width: 100%;
+    border-bottom: solid 1px gray;
+    gap: 15px;
+  }
+  .Menubars {
+    font-weight: 700;
+    margin-left: 10px;
+    color: rgb(185, 157, 157);
+    transform: rotate(90deg);
+  }
+  .menu-item {
+  position: relative;
+  margin-left: 15px;
+  font-family: 'criptofont';
+  color: rgb(41, 41, 41);
+  font-weight: 700;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e0e0e0;
+    border: solid 1px gray;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    z-index: 1000;
+  }
+  .submenu li {
+    padding: 10px 20px;
+    color: white;
+  }
+  .submenucurrencies li{
+    padding: 10px 20px
+  }
+  .menu-item:hover .crypto-menu {
+    display: block;
+  }
+  .submenu li:hover {
+    background-color: #555;
+  }
+  .submenucurrencies li:hover{
+    background-color: white;
+  }
+  .curmenu {
+    position: relative;
+    font-family: 'criptofont';
+    font-weight: 600;
+    margin-top: 1px;
+    color: gray;
+  }
+  
+  .curcolor {
+    color: rgb(0, 0, 0);
+  }
+  .sepitbar {
+    font-weight: 200;
+    color: #505050;
+  }
+  .curmenu {
+    position: relative;
+    display: inline-block;
+    color: rgb(41, 41, 41);
+  }
+  
+  .submenucurrencies {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    list-style: none;
+    top: 100%; 
+    left: 0;
+    min-width: 150px;
+    max-height: 300px;
+    overflow-y: auto; 
+    z-index: 1000; 
+  }
+  
+  .curmenu:hover .submenucurrencies {
+    display: block;  
+  }
+  
+  .submenucurrencies li {
+    padding: 5px 10px;
+    white-space: nowrap; 
+  }
+  
+  .submenucurrencies li a {
+    color: rgb(0, 0, 0);
+    display: block;
+  }
+  .submenucurrencies li:hover {
+    background-color: #b6bbbe;
+  }
+  .curcolor {
+    color: black;
+  }
+  .tbmenu{
+    height: 17px;
+    margin-left: 5px;
+  }
+  .chartsmenu {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    font-family: 'criptofont';
+    margin-top: 1px;
+    color: rgb(41, 41, 41);
+  }
+  
+  .submenucharts {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    top: 100%;  
+    left: 0;
+    min-width: 150px;
+    z-index: 1000; 
+  }
+  
+  .chartsmenu:hover .submenucharts {
+    display: block;  
+  }
+  
+  .submenucharts li {
+    padding: 5px 10px;
+    white-space: nowrap; 
+  }
+  
+  .submenucharts li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+  }
+  .giveaway{
+    color: rgb(41, 41, 41);
+    font-family: 'criptofont';
+    font-weight: 600;
+  }
+  .curflags {
+    height: 18px;
+    margin-right: 7px;
+  }
+  .submenucurrencies::-webkit-scrollbar {
+    width: 5px;
+  }
+  .submenucurrencies::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 3px; 
+  }
+  .crypto-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    max-height: 300px; 
+    overflow-y: auto; 
+    z-index: 1000; 
+  }
+  .crypto-menu li a {
+    color: rgb(0, 0, 0);
+    display: block;
+  }
+  .crypto-menu li {
+    padding: 5px 10px;
+    margin-top: 2px;
+    white-space: nowrap;
+  }
+  .menu-item {
+    position: relative;
+    display: inline-block;
+    color: rgb(41, 41, 41);
+  }
+  .crypto-menu::-webkit-scrollbar {
+    width: 5px;
+  }
+  .crypto-menu::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 3px; 
+  }
+  .crypto-menu li:hover {
+    background-color: #b6bbbe;
+  }
+  .submenucharts li:hover{
+    background-color:#b6bbbe ;
+  }

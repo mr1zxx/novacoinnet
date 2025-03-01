@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'modernfont';
+    src: url('../assets/coinfont.ttf');
+}
+@font-face {
+    font-family: 'montserrat'; ;
+    src: url(../assets/gontserrat.ttf);
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.solana{
+    font-family: 'montserrat';
+    font-size: 30px;
+    color: #000;
+    padding: 20px;
+    margin-left: 19px;
+}
+.solana1 {
+    font-family: 'montserrat';
+    font-size: 18px;
+    color: #000;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.solanabutton{
+
+    
+}
+.solana5{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 229, 229);
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.solpng{
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.criptoname{
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'montserrat';
+    color: black;
+}
+.criptoheader{
+    display: flex;
+    height: 78px;
+    width: 70%;
+    background-color: #fdf7f7;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+.solana4 {
+    padding: 5px 20px;
+    display: flex;
+    margin-left: 20px;
+    background-color: rgb(240, 229, 229);
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 40px;
+    width: 170px;
+    color: #000;
+    font-family: 'montserrat';
+}
+.maxsupply {
+    font-size: 11px;
+    font-family: 'montserrat';
+}
+.coininfo1{
+    display: flex;
+    padding: 0px 20px;
+}
+.solana2{
+    height: 40px;
+    padding: 10px 20px;
+    margin-left: 0px;
+    background-color: rgb(240, 229, 229);
+    border-radius: 50px;
+    margin-top: 20px;
+    color: #000;
+    font-family: 'montserrat';
+    border: 1px solid rgb(245, 229, 225);
+}
+.solanaweb {
+    font-size: 17px;
+    color: #000;
+    padding: 10px 0px;
+    font-family: 'montserrat';
+    margin-left: 20px;
+}
+.boxleft {
+    width: 30%;
+    height: 100vh;
+    background-color: #fdf7f7;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px rgb(212, 212, 212);
+}
+.boxleft1 {
+    border-top: solid 1px rgb(212, 212, 212);
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: solid 1px rgb(212, 212, 212);
+    
+}
+.boxleft1::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px; 
+}
+.boxleft1::-webkit-scrollbar {
+    width: 2px;
+  }
+  .coininfo {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px rgb(212, 212, 212);
+  }
+  .marketprice{
+    border: solid 1px rgb(197, 197, 197);
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 45px;
+    border-radius: 10px;
+    height: 40px;
+  }
+  .marketcap {
+    margin-left: 50px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .boxleft {
+      width: 100%;
+      order: 2; 
+    }
+  
+    .boxleft1 {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .criptoheader {
+      margin-top: 0px;
+      width: 100%;
+    }
+  
+    .solpng {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .criptoname {
+        margin-top: 26px;
+      font-size: 20px;
+    }
+  
+    .solana {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .coininfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .solanaweb {
+      font-size: 16px;
+    }
+    .coininfo1 {
+        margin-left: 20px;
+      }
+    .maxsupply {
+      font-size: 15px;
+    }
+  }
