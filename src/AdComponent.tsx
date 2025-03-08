@@ -5,7 +5,7 @@ const AdComponent = () => {
         try {
             (window.adsbygoogle = window.adsbygoogle || []).push({});
         } catch (e) {
-            console.error("Erro ao carregar o AdSense:", e);
+            console.error("!", e);
         }
     }, []);
 
